@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:24.10
 
 # 设置固定的项目路径
 ENV WORKDIR /Open-IM-Server
