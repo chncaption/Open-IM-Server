@@ -15,7 +15,7 @@ RUN chmod +x *.sh
 RUN /bin/sh -c ./build_all_service.sh
 
 #Blank image Multi-Stage Build
-FROM ubuntu
+FROM ubuntu:24.10
 
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install apt-transport-https && apt-get install procps\
